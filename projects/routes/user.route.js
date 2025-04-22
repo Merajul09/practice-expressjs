@@ -14,4 +14,8 @@ router.get("/:id", (req, res) => {
   res.send(`Get user with ID: ${req.params.id}`);
 });
 
+router.delete("/:id", (req, res) => {
+  res.send(`delete user with ID: ${req.params.id}`);
+});
+
 module.exports = router;
